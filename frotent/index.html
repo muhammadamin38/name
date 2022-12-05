@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+
+   Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio esse exercitationem a omnis saepe nihil est ad illum quo dolor. Consectetur sint, optio voluptate quidem officia asperiores quos nobis repellendus?
+   {% for x in cars %}
+   <h3>{{ x.ismi}}</h3>
+   <p>{{ x.rangi}}</p>
+   <p>{{ x.turi}}</p>
+   <img src="{{x.rasmi }}" alt="">
+
+   {% endfor%}
+   
+</body>
+</html>
